@@ -40,6 +40,7 @@ app.post('/new', async (req,res) => {
 <html>
 <head>
     <link rel="stylesheet" type="text/css" href="/css/bootstrap.min.css" />
+    <link rel="stylesheet" href="css/common.css">
     <title>Blog</title>
 </head>
 <body>
@@ -170,6 +171,27 @@ app.get('/display/:id', async (req, res) => {
 }
 ```
 在上述引入的css文件中，通过使用伪类选择器，实现光标悬停时修改样式的功能
+##### 添加背景
+```js
+html,
+body {
+    height: 100%;
+}
+ 
+body {
+    background-image: url(../jing.jpg);
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: cover;
+}
+ 
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+```
+给博客系统添加背景，并完成背景设置，使页面更加美观
 ##### 日期增加
 ```js
 all.ejs
@@ -249,10 +271,10 @@ app.put('/:id', async (req, res) => {
 将markdown属性改为html属性，实现功能
 # 实验结果
 通过以上步骤，我们制作出了一个简单而美观，基础功能齐全博客系统。
-| 工作量统计表 | 基础功能 | 新增功能1 | 新增功能2 | 新增功能3 | 新增功能4 | 新增功能5 | 新增功能6 | 
-| --- | --- | --- | --- | --- | --- | --- | --- |
-| 描述  | 博客系统中基础的增删改查操作 | 博客系统CSS美化 | 增加时间属性 | 文章日期排序功能 | 增加markdown输入框 | 实现markdown功能 | 在display页面渲染markdown | 
-| 学时  | 8   | 2   | 2   | 1   | 2   | 2   | 2   | 
+| 工作量统计表 | 基础功能 | 新增功能1 | 新增功能2 | 新增功能3 | 新增功能4 | 新增功能5 | 新增功能6 | 新增功能7 |
+| ---- | ---- | ---- | ---- | ---- | ---- | ---- | ---- | ---- |
+| 描述  | 博客系统中基础的增删改查操作 | 博客系统CSS美化 | 添加博客系统背景 | 增加时间属性 | 文章日期排序功能 | 增加markdown输入框 | 实现markdown功能 | 在display页面渲染markdown | 
+| 学时  | 8   | 2   | 1   | 2   | 1   | 2   | 2   | 2   | 
 
 
 
