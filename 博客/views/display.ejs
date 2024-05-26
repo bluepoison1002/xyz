@@ -1,0 +1,16 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Blog</title>
+  <link rel="stylesheet" type="text/css" href="/css/bootstrap.min.css" />
+</head>
+<body>
+    <div class="container">
+        <h1 class="mb-1"><%= article.title %></h1>
+        <h3><%= article.markdown %></h3>
+        <p><%- article.html %></p>
+        <a href="/" class="btn btn-secondary">主页</a>
+        <a href="/edit/<%= article._id %>" class="btn btn-info">编辑</a>
+    </div>
+</body>
+</html>
