@@ -1,0 +1,30 @@
+.container a:hover {
+    background: #333;
+    color: #fff;
+}/*使用伪类选择器，实现光标悬停时修改样式的功能*/
+
+
+.container button:hover {
+    background: #333;
+    color: #fff;
+}
+
+
+
+html,
+body {
+    height: 100%;
+}
+ 
+body {
+    background-image: url(../jing.jpg);
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: cover;
+}
+ 
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
